@@ -1,0 +1,10 @@
+query TimeZones($id: String) {
+  Timezone(_id: $id) {
+    _id
+    name
+    countries {
+      name
+      capital
+    }
+  }
+}
